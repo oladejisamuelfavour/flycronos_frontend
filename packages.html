@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages – Flycronos</title>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="packages.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="navbar">
+  <div class="container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/FLYCRONOS logo main.png" alt="Flycronos Logo">
+      </a>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="packages.html" class="active">Packages</a></li>
+        <li><a href="visa.html">Visa</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+      </ul>
+    </nav>
+
+    <a href="contact.html" class="book-btn">Manage Booking</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="packages-hero">
+    <div class="packages-hero-overlay"></div>
+    <div class="packages-hero-content">
+        <h1>Exclusive Travel Packages</h1>
+        <p>Curated for elegance, comfort and unforgettable global experiences.</p>
+    </div>
+</section>
+
+<!-- FILTERS -->
+<div class="package-filter-section">
+    <div class="package-filters">
+        <button class="p-filter-btn active" data-filter="all">All</button>
+        <button class="p-filter-btn" data-filter="luxury">Luxury</button>
+        <button class="p-filter-btn" data-filter="honeymoon">Honeymoon</button>
+        <button class="p-filter-btn" data-filter="family">Family</button>
+        <button class="p-filter-btn" data-filter="adventure">Adventure</button>
+        <button class="p-filter-btn" data-filter="budget">Budget</button>
+    </div>
+</div>
+
+<!-- PACKAGES GRID -->
+<section class="packages-grid">
+
+    <!-- LUXURY PACKAGE -->
+    <div class="package-card" data-category="luxury"
+         style="background-image: url('images/maldives.jpg');">
+        <div class="package-overlay"></div>
+        <div class="package-content">
+            <h3>Maldives Paradise Escape</h3>
+            <p>5 Nights | Overwater Villa | Private Butler | Seaplane Transfer</p>
+            <span class="price">Ranging From $3,499</span>
+        </div>
+    </div>
+
+    <!-- HONEYMOON -->
+    <div class="package-card" data-category="honeymoon"
+         style="background-image: url('images/paris.jpg');">
+        <div class="package-overlay"></div>
+        <div class="package-content">
+            <h3>Paris Romantic Getaway</h3>
+            <p>4 Nights | Seine Cruise | Eiffel Dinner | Photoshoot</p>
+            <span class="price">Ranging From $2,199</span>
+        </div>
+    </div>
+
+    <!-- FAMILY -->
+    <div class="package-card" data-category="family"
+         style="background-image: url('images/orlando.jpg');">
+        <div class="package-overlay"></div>
+        <div class="package-content">
+            <h3>Orlando Family Adventure</h3>
+            <p>6 Nights | Disney World | Universal | Villa Stay</p>
+            <span class="price">Ranging From $2,799</span>
+        </div>
+    </div>
+
+    <!-- ADVENTURE -->
+    <div class="package-card" data-category="adventure"
+         style="background-image: url('images/kenya-safari.jpg');">
+        <div class="package-overlay"></div>
+        <div class="package-content">
+            <h3>Kenya Safari Expedition</h3>
+            <p>5 Days | Maasai Mara | Private Jeep | Guide</p>
+            <span class="price">Ranging From $1,950</span>
+        </div>
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="packages-cta">
+    <h2>Trusted by 1,000+ travellers worldwide</h2>
+    <p>Let our experts craft the perfect travel experience for you.</p>
+    <a href="process-visa.html" class="cta-btn">Get a Personalized Quote</a>
+</section>
+
+<!-- ==============================
+     FOOTER SECTION
+============================== -->
+<footer class="footer">
+
+  <!-- NEWSLETTER -->
+  <div class="newsletter">
+    <h2>Let’s Keep You Updated!</h2>
+    <p>Get travel deals, destination updates, and exclusive Flycronos offers straight to your inbox.</p>
+
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <!-- MAIN FOOTER -->
+  <div class="footer-main">
+
+    <div class="footer-col brand">
+      <img src="images/flycronos logo white.png" alt="Flycronos Logo" class="footer-logo">
+      <p>Your trusted travel partner for affordable, smooth, and exciting journeys across the world.</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="destinations.html">Top Destinations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="blog.html">Our Blogs</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Customer Service</a></li>
+        <li><a href="booking-policy.html">Booking Policy</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col social">
+      <h3>Connect With Us</h3>
+
+      <div class="social-icons">
+        <a href="https://m.facebook.com/flycronostravels" target="_blank">
+          <img src="images/FB-LOGO.png" alt="Facebook">
+        </a>
+
+        <a href="https://instagram.com/flycronos" target="_blank">
+          <img src="images/IG-LOGO.png" alt="Instagram">
+        </a>
+
+        <a href="https://x.com/AishatAwalu" target="_blank">
+          <img src="images/X-LOGO.png" alt="Twitter">
+        </a>
+
+        <a href="mailto:contact@flycronos.com" target="_blank">
+          <img src="images/gmail-logo.png" alt="GMail">
+        </a>
+
+        <a href="https://wa.me/2347069597292" target="_blank">
+          <img src="images/WHATSAPP-LOGO.png" alt="WhatsApp">
+        </a>
+      </div>
+    </div>
+
+  </div> <!-- END footer-main -->
+
+  <!-- COPYRIGHT SECTION (BOTTOM CENTER) -->
+  <div class="footer-bottom">
+    <p>© 2026 Flycronos Travels & Tours. All Rights Reserved.</p>
+    <p>
+  Created By
+  <a href="#" class="footer-credit">SWERT</a>
+</p>
+
+  </div>
+
+</footer>
+
+<!-- FILTER JS -->
+<script src="packages.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations – Flycronos</title>
+
+  <!-- Load home page styles first -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Load destination page styles -->
+  <link rel="stylesheet" href="destinations.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="navbar">
+  <div class="container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/FLYCRONOS logo main.png" alt="Flycronos Logo">
+      </a>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html" class="active">Destinations</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="visa.html">Visa</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+      </ul>
+    </nav>
+
+    <a href="contact.html" class="book-btn">Manage Booking</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="dest-hero">
+  <div class="dest-hero-overlay"></div>
+  <div class="dest-hero-content">
+    <h1>Explore Top Destinations</h1>
+    <p>Handpicked locations curated for unforgettable travel experiences.</p>
+  </div>
+</section>
+
+<!-- FILTER BUTTONS -->
+<section class="filter-section">
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="beach">Beach</button>
+    <button class="filter-btn" data-filter="adventure">Adventure</button>
+    <button class="filter-btn" data-filter="city">City</button>
+    <button class="filter-btn" data-filter="romantic">Romantic</button>
+  </div>
+</section>
+
+<!-- DESTINATION GRID -->
+<section class="dest-grid">
+
+  <div class="destination-card" data-category="beach" style="background-image:url('images/bali.jpg');">
+    <div class="card-overlay"></div>
+    <div class="card-content">
+      <h3>Bali, Indonesia</h3>
+      <p>Tropical paradise with crystal-clear waters.</p>
+    </div>
+  </div>
+
+  <div class="destination-card" data-category="city" style="background-image:url('images/dubai.jpg');">
+    <div class="card-overlay"></div>
+    <div class="card-content">
+      <h3>Dubai, UAE</h3>
+      <p>Luxury shopping, skyscrapers & unforgettable adventure.</p>
+    </div>
+  </div>
+
+  <div class="destination-card" data-category="romantic" style="background-image:url('images/paris.jpg');">
+    <div class="card-overlay"></div>
+    <div class="card-content">
+      <h3>Paris, France</h3>
+      <p>The city of love with timeless elegance.</p>
+    </div>
+  </div>
+
+  <div class="destination-card" data-category="adventure" style="background-image:url('images/kenya.jpg');">
+    <div class="card-overlay"></div>
+    <div class="card-content">
+      <h3>Maasai Mara, Kenya</h3>
+      <p>Wildlife safari adventure of a lifetime.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ==============================
+     FOOTER SECTION
+============================== -->
+<footer class="footer">
+
+  <!-- NEWSLETTER -->
+  <div class="newsletter">
+    <h2>Let’s Keep You Updated!</h2>
+    <p>Get travel deals, destination updates, and exclusive Flycronos offers straight to your inbox.</p>
+
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <!-- MAIN FOOTER -->
+  <div class="footer-main">
+
+    <div class="footer-col brand">
+      <img src="images/flycronos logo white.png" alt="Flycronos Logo" class="footer-logo">
+      <p>Your trusted travel partner for affordable, smooth, and exciting journeys across the world.</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="destinations.html">Top Destinations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="blog.html">Our Blogs</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Customer Service</a></li>
+        <li><a href="booking-policy.html">Booking Policy</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col social">
+      <h3>Connect With Us</h3>
+
+      <div class="social-icons">
+        <a href="https://m.facebook.com/flycronostravels" target="_blank">
+          <img src="images/FB-LOGO.png" alt="Facebook">
+        </a>
+
+        <a href="https://instagram.com/flycronos" target="_blank">
+          <img src="images/IG-LOGO.png" alt="Instagram">
+        </a>
+
+        <a href="https://x.com/AishatAwalu" target="_blank">
+          <img src="images/X-LOGO.png" alt="Twitter">
+        </a>
+
+        <a href="mailto:contact@flycronos.com" target="_blank">
+          <img src="images/gmail-logo.png" alt="GMail">
+        </a>
+
+        <a href="https://wa.me/2347069597292" target="_blank">
+          <img src="images/WHATSAPP-LOGO.png" alt="WhatsApp">
+        </a>
+      </div>
+    </div>
+
+  </div> <!-- END footer-main -->
+
+  <!-- COPYRIGHT SECTION (BOTTOM CENTER) -->
+  <div class="footer-bottom">
+    <p>© 2026 Flycronos Travels & Tours. All Rights Reserved.</p>
+    <p>
+  Created By
+  <a href="#" class="footer-credit">SWERT</a>
+</p>
+
+  </div>
+
+</footer>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.destination-card');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+
+      document.querySelector('.filter-btn.active')?.classList.remove('active');
+      btn.classList.add('active');
+
+      let filter = btn.dataset.filter;
+
+      cards.forEach(card => {
+        const match = filter === "all" || card.dataset.category === filter;
+
+        if (match) {
+          card.style.display = "block";
+          card.style.opacity = 0;
+          setTimeout(() => card.style.opacity = 1, 50);
+        } else {
+          card.style.opacity = 0;
+          setTimeout(() => card.style.display = "none", 200);
+        }
+      });
+
+    });
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flycronos | Discover Your World with Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- HEADER -->
+<header class="navbar">
+  <div class="container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/FLYCRONOS logo main.png" alt="Flycronos Logo">
+      </a>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="visa.html">Visa</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+      </ul>
+    </nav>
+
+    <a href="contact.html" class="book-btn">Manage Booking</a>
+  </div>
+</header>
+
+
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>Explore the World with Flycronos</h1>
+    <p>Discover destinations, book flights, and plan your dream adventures effortlessly.</p>
+    <a href="destinations.html" class="cta-btn">Start Your Journey</a>
+  </div>
+</section>
+
+
+
+  <!-- Travel Search & Booking Section -->
+<section class="booking">
+  <div class="container booking-container">
+    <h2>Plan Your Next Trip</h2>
+    <p>Search and book flights around the world.</p>
+
+    <form class="booking-form">
+      <div class="form-group">
+        <label>From</label>
+        <input type="text" placeholder="City or Airport">
+      </div>
+
+      <div class="form-group">
+        <label>To</label>
+        <input type="text" placeholder="Destination">
+      </div>
+
+      <div class="form-group">
+        <label>Departure</label>
+        <input type="date">
+      </div>
+
+      <div class="form-group">
+        <label>Return</label>
+        <input type="date">
+      </div>
+
+      <div class="form-group">
+        <label>Travelers</label>
+        <input type="number" min="1" value="1">
+      </div>
+
+      <button type="submit" class="search-btn">Search Trips</button>
+    </form>
+  </div>
+</section>
+
+<section class="destinations">
+  <h2>Top Destinations</h2>
+  <div class="destination-grid">
+
+    <div class="destination-card">
+      <img src="images/paris.jpg" alt="Paris">
+      <div class="destination-info">
+        <h3>Paris, France</h3>
+        <p>The city of lights and romance</p>
+      </div>
+    </div>
+
+    <div class="destination-card">
+      <img src="images/maldives.jpg" alt="Maldives">
+      <div class="destination-info">
+        <h3>Maldives</h3>
+        <p>Turquoise waters and white sands</p>
+      </div>
+    </div>
+
+    <div class="destination-card">
+      <img src="images/dubai.jpg" alt="Dubai">
+      <div class="destination-info">
+        <h3>Dubai, UAE</h3>
+        <p>The city of gold and innovation</p>
+      </div>
+    </div>
+
+    <div class="destination-card">
+      <img src="images/tokyo.jpg" alt="Tokyo">
+      <div class="destination-info">
+        <h3>Tokyo, Japan</h3>
+        <p>Culture, technology, and wonder</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Popular Packages Section -->
+<section class="packages">
+  <div class="container">
+    <h2>Popular Packages</h2>
+    <p>Discover some of the most loved experiences our travelers book again and again.</p>
+
+    <div class="package-grid">
+      <div class="package-card">
+        <img src="images/maldives.jpg" alt="Maldives">
+        <div class="package-info">
+          <h3>Maldives Paradise Escape</h3>
+          <p>5 Nights • Maldives</p>
+          <div class="price">$1,250</div>
+          <button>View Details</button>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <img src="images/paris.jpg" alt="Paris">
+        <div class="package-info">
+          <h3>Paris Romantic Getaway</h3>
+          <p>4 Nights • France</p>
+          <div class="price">$1,750</div>
+          <button>View Details</button>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <img src="images/orlando.jpg" alt="Orlando">
+        <div class="package-info">
+          <h3>Orlando Family Adventure</h3>
+          <p>6 Nights • USA</p>
+          <div class="price">$1,100</div>
+          <button>View Details</button>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <img src="images/paris.jpg" alt="Paris">
+        <div class="package-info">
+          <h3>Paris Romantic Getaway</h3>
+          <p>4 Days • France</p>
+          <div class="price">$1,400</div>
+          <button>View Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE FLYCRONOS -->
+<section id="why-choose" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-12 text-green-700">Why Choose Flycronos</h2>
+
+    <div class="grid md:grid-cols-4 gap-10">
+
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+        <img src="images/plane.png" alt="Seamless Booking" class="mx-auto mb-4 w-20 h-20 transform hover:scale-110 transition-transform">
+        <h3 class="text-xl font-semibold mb-2 text-green-800">Seamless Booking</h3>
+        <p class="text-gray-600">Experience effortless booking with our intuitive platform and 24/7 support.</p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+        <img src="images/globe.png" alt="Worldwide Destinations" class="mx-auto mb-4 w-20 h-20 transform hover:scale-110 transition-transform">
+        <h3 class="text-xl font-semibold mb-2 text-green-800">Worldwide Destinations</h3>
+        <p class="text-gray-600">Explore breathtaking destinations across continents — from Lagos to Lisbon.</p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+        <img src="images/wallet.png" alt="Affordable Packages" class="mx-auto mb-4 w-20 h-20 transform hover:scale-110 transition-transform">
+        <h3 class="text-xl font-semibold mb-2 text-green-800">Affordable Packages</h3>
+        <p class="text-gray-600">Enjoy luxury travel experiences at unbeatable prices with our flexible deals.</p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+        <img src="images/handshake.png" alt="Trusted by Many" class="mx-auto mb-4 w-20 h-20 transform hover:scale-110 transition-transform">
+        <h3 class="text-xl font-semibold mb-2 text-green-800">Trusted by Many</h3>
+        <p class="text-gray-600">Thousands of travelers trust us for our reliability, transparency, and excellence.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="py-20 bg-green-50 relative">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-10 text-green-700">What Our Customers Say</h2>
+
+    <div id="testimonial-slider" class="relative overflow-hidden max-w-2xl mx-auto">
+      <div class="testimonial-slide opacity-100 transition-opacity duration-700 ease-in-out">
+        <p class="text-lg italic mb-4 text-gray-700">"Flycronos made my honeymoon trip absolutely unforgettable. Everything was seamless!"</p>
+        <h3 class="text-xl font-semibold text-green-800">– Sandra A., Nigeria</h3>
+      </div>
+      <div class="testimonial-slide absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out">
+        <p class="text-lg italic mb-4 text-gray-700">"Professional, reliable, and affordable. I’ll always choose Flycronos for my travels."</p>
+        <h3 class="text-xl font-semibold text-green-800">– David M., Ghana</h3>
+      </div>
+      <div class="testimonial-slide absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out">
+        <p class="text-lg italic mb-4 text-gray-700">"From booking to boarding, they handled everything perfectly. Highly recommend!"</p>
+        <h3 class="text-xl font-semibold text-green-800">– Grace E., UK</h3>
+      </div>
+    </div>
+
+    <div class="flex justify-center gap-3 mt-8">
+      <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+      <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+      <span class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer"></span>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript for testimonials -->
+<script>
+const slides = document.querySelectorAll('.testimonial-slide');
+const dots = document.querySelectorAll('.dot');
+let index = 0;
+
+function showSlide(n) {
+  slides.forEach((slide, i) => {
+    slide.style.opacity = (i === n) ? '1' : '0';
+    slide.style.position = (i === n) ? 'relative' : 'absolute';
+  });
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('bg-green-600', i === n);
+  });
+}
+
+dots.forEach((dot, i) => {
+  dot.addEventListener('click', () => {
+    index = i;
+    showSlide(index);
+  });
+});
+
+function autoSlide() {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}
+
+showSlide(index);
+setInterval(autoSlide, 5000);
+</script>
+
+
+
+<!-- ==============================
+     FOOTER SECTION
+============================== -->
+<footer class="footer">
+
+  <!-- NEWSLETTER -->
+  <div class="newsletter">
+    <h2>Let’s Keep You Updated!</h2>
+    <p>Get travel deals, destination updates, and exclusive Flycronos offers straight to your inbox.</p>
+
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <!-- MAIN FOOTER -->
+  <div class="footer-main">
+
+    <div class="footer-col brand">
+      <img src="images/flycronos logo white.png" alt="Flycronos Logo" class="footer-logo">
+      <p>Your trusted travel partner for affordable, smooth, and exciting journeys across the world.</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="destinations.html">Top Destinations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="blog.html">Our Blogs</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Customer Service</a></li>
+        <li><a href="booking-policy.html">Booking Policy</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col social">
+      <h3>Connect With Us</h3>
+
+      <div class="social-icons">
+        <a href="https://m.facebook.com/flycronostravels" target="_blank">
+          <img src="images/FB-LOGO.png" alt="Facebook">
+        </a>
+
+        <a href="https://instagram.com/flycronos" target="_blank">
+          <img src="images/IG-LOGO.png" alt="Instagram">
+        </a>
+
+        <a href="https://x.com/AishatAwalu" target="_blank">
+          <img src="images/X-LOGO.png" alt="Twitter">
+        </a>
+
+        <a href="mailto:contact@flycronos.com" target="_blank">
+          <img src="images/gmail-logo.png" alt="GMail">
+        </a>
+
+        <a href="https://wa.me/2347069597292" target="_blank">
+          <img src="images/WHATSAPP-LOGO.png" alt="WhatsApp">
+        </a>
+      </div>
+    </div>
+
+  </div> <!-- END footer-main -->
+
+  <!-- COPYRIGHT SECTION (BOTTOM CENTER) -->
+  <div class="footer-bottom">
+    <p>© 2026 Flycronos Travels & Tours. All Rights Reserved.</p>
+    <p>
+  Created By
+  <a href="#" class="footer-credit">SWERT</a>
+</p>
+
+  </div>
+
+</footer>

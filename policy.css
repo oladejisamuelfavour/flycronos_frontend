@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  padding-top: 85px;
+  background: #f9f9f9;
+}
+
+/* HERO */
+.policy-hero {
+  position: relative;
+  height: 45vh;
+  background: url('images/policy-hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.policy-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,.75));
+}
+
+.policy-hero-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.policy-hero-content h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.policy-hero-content p {
+  margin-top: 10px;
+  opacity: .9;
+}
+
+/* CONTENT */
+.policy-content {
+  max-width: 900px;
+  margin: 70px auto;
+  padding: 0 20px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.policy-content p {
+  margin-bottom: 25px;
+}
+
+/* FAQ */
+.faq-item {
+  margin-bottom: 30px;
+}
+
+.faq-item h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* CTA */
+.policy-cta {
+  margin-top: 50px;
+  padding: 30px;
+  background: #f2f7f4;
+  border-left: 4px solid #044B2B;
+}
+
+.policy-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 28px;
+  background: #044B2B;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+}
+.policy-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 28px;
+  background: #044B2B;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+/* HOVER EFFECT — matches other pages */
+.policy-btn:hover {
+  background: #3fbf00;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(4, 75, 43, 0.25);
+}

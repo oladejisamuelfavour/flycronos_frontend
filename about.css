@@ -1,0 +1,202 @@
+:root {
+  --deep: #044B2B;
+  --accent: #3FBF00;
+  --text: #222;
+  --muted: #666;
+  --bg: #ffffff;
+  --radius: 18px;
+  --shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* GLOBAL */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  padding-top: 85px; /* header offset */
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* ================= HERO ================= */
+.about-hero {
+  position: relative;
+  height: 55vh;
+  background: url("images/about-hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.8)
+  );
+}
+
+.about-hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  padding: 0 20px;
+}
+
+.about-hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.about-hero-content p {
+  margin-top: 12px;
+  font-size: 1.15rem;
+  opacity: 0.9;
+}
+
+/* ================= WHO WE ARE ================= */
+.who-we-are {
+  padding: 80px 0;
+}
+
+.who-we-are h2 {
+  color: var(--deep);
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.who-we-are p {
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.who-we-are .image img {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* ================= MISSION & VISION ================= */
+.mission-vision {
+  padding: 80px 0;
+  background: #f8f8f8;
+}
+
+.mv-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.mv-card h3 {
+  color: var(--deep);
+  margin-bottom: 12px;
+}
+
+/* ================= WHY US ================= */
+.why-us {
+  padding: 80px 0;
+}
+
+.why-us h2 {
+  text-align: center;
+  color: var(--deep);
+  margin-bottom: 50px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.why-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform .3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+}
+
+.why-card h4 {
+  color: var(--deep);
+  margin-bottom: 8px;
+}
+
+/* ================= CTA ================= */
+.about-cta {
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(
+    to right,
+    rgba(4,75,43,0.9),
+    rgba(4,75,43,0.75)
+  ),
+  url("images/cta-bg.jpg") center/cover no-repeat;
+  color: #fff;
+}
+
+.about-cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.about-cta p {
+  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #fff;
+  color: var(--deep);
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.cta-btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero-content h1 {
+    font-size: 2.3rem;
+  }
+}

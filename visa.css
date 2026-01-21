@@ -1,0 +1,193 @@
+/* visa.css — FlyCronos Visa page (GeoTravels-like layout)
+   Typography: Montserrat
+   Brand colors: #044b2b (deep), #3fbf00 (accent)
+*/
+
+/* ---------- Root / Reset ---------- */
+:root{
+  --deep: #044b2b;
+  --accent: #3fbf00;
+  --muted: #6b6b6b;
+  --white: #ffffff;
+  --bg: #fbfbfb;
+  --container-max: 1160px;
+  --radius: 8px;
+  --gap: 22px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Montserrat", sans-serif;
+  background: var(--bg);
+  color: #222;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.55;
+}
+
+/* simple page container */
+.container{
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------- HERO (left image, right content) ---------- */
+.vc-hero{
+  padding: 56px 0;
+  background: var(--bg);
+}
+
+.vc-hero-inner{
+  display:flex;
+  gap: var(--gap);
+  align-items: flex-start;
+}
+
+/* left media column */
+.vc-hero-media{
+  flex: 0 0 46%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vc-hero-media img{
+  width:100%;
+  height:auto;
+  border-radius: 10px;
+  object-fit:cover;
+  box-shadow: 0 14px 40px rgba(4,75,43,0.08);
+}
+
+/* right text column */
+.vc-hero-content{
+  flex: 1 1 54%;
+}
+
+.vc-hero-content h1{
+  margin: 0 0 14px 0;
+  font-size: 30px; /* Geo-style headline size */
+  line-height: 1.08;
+  font-weight: 700;
+  color: #0b2b1a; /* slightly darker green tint for headline harmony */
+}
+
+.vc-intro{
+  margin: 0 0 20px 0;
+  color: var(--muted);
+  font-size: 15.5px;
+}
+
+/* services boxes stacked like GeoTravel */
+.vc-services{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-top: 6px;
+}
+
+.vc-service{
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  padding: 14px 16px;
+  border-radius: 6px;
+  display:block;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.vc-service strong{
+  display:block;
+  font-weight:600;
+  margin-bottom:6px;
+  color: #0b2b1a;
+}
+
+.vc-service p{
+  margin:0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* hover micro-effect (subtle) */
+.vc-service:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(4,75,43,0.04);
+}
+
+/* CTA wrapper */
+.vc-cta-wrap{
+  margin-top: 18px;
+}
+
+.vc-btn-primary{
+  display:inline-block;
+  background: var(--deep);
+  color: var(--white);
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background .18s ease, transform .12s ease;
+}
+
+/* hover color should be bright accent #3fbf00 per your request */
+.vc-btn-primary:hover{
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* ---------- small trust row ---------- */
+.vc-trust{
+  margin: 28px 50 64px 0;
+}
+
+.vc-trust-list{
+  list-style:none;
+  display:flex;
+  gap:28px;
+  justify-content:center;
+  padding:0;
+  margin:0;
+}
+
+.vc-trust-list li{
+  background:#fff;
+  border-radius:8px;
+  padding:14px 18px;
+  min-width:160px;
+  text-align:center;
+  border:1px solid #eee;
+}
+
+.vc-trust-list li strong{
+  display:block;
+  font-size:18px;
+  color:var(--deep);
+}
+
+.vc-trust-list li span{
+  display:block;
+  font-size:12.5px;
+  color: #666;
+  margin-top:6px;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 980px){
+  .vc-hero-inner{flex-direction:column-reverse; align-items:center;}
+  .vc-hero-media{width:100%}
+  .vc-hero-content{width:100%; text-align:center}
+  .vc-hero-content h1{font-size:28px}
+  .vc-services{align-items:stretch}
+  .vc-trust-list{flex-direction:column; gap:12px}
+}
+
+/* reduce conflicts with global nav/footer: high specificity on vc- classes only */
+
+/* STYLING FOR THE HERO CONTENT FROM THE HEADER */
+body {
+    padding-top: 50px; /* adjust this to match your header height */
+}
