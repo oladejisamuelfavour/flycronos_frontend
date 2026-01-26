@@ -76,3 +76,10 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
   const menu = document.getElementById("nav-menu");
   menu.style.display = menu.style.display === "block" ? "none" : "block";
 });
+
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('open');
+});
