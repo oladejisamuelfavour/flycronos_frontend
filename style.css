@@ -1058,3 +1058,18 @@ footer {
 
 }
 
+@media (max-width: 768px) {
+  #nav-menu {
+    display: none;
+    width: 100%;
+  }
+
+  #nav-menu.open {
+    display: block;
+  }
+}
+
+.menu-toggle {
+  position: relative;
+  z-index: 9999;
+}
