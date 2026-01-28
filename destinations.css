@@ -2,7 +2,7 @@
 .dest-hero {
   position: relative;
   height: 55vh;
-  background: url('images/destination-hero.jpg') center/cover no-repeat;
+  background: url('images/destination-hero.webp') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
