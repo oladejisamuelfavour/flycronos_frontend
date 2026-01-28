@@ -1,3 +1,5 @@
+console.log("Main JS loaded"):
+
 // Example: simple alert when "Book Now" button is clicked
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
