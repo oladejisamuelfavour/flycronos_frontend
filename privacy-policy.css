@@ -14,7 +14,7 @@ body {
 .policy-hero {
   position: relative;
   height: 45vh;
-  background: url('images/policy-hero.webp') center/cover no-repeat;
+  background: url('images/privacy-policy-hero.webp') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
