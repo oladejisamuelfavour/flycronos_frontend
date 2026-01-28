@@ -1,7 +1,8 @@
-console.log("Main JS loaded"):
+console.log("Main JS loaded");
 
-// Example: simple alert when "Book Now" button is clicked
-// script.js
+/* =========================
+   GLOBAL BUTTON ALERT
+========================= */
 document.addEventListener('DOMContentLoaded', () => {
   const btns = document.querySelectorAll('.btn, .btn-card');
   btns.forEach(btn => {
@@ -10,78 +11,103 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-// Hero slider logic
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
-  });
-}
+/* =========================
+   HERO SLIDER (HOME ONLY)
+========================= */
+(function () {
+  const heroSlides = document.querySelectorAll('.slide');
+  if (!heroSlides.length) return;
 
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide(currentSlide);
-}
+  let currentSlide = 0;
 
-// Auto slide every 5 seconds
-setInterval(nextSlide, 5000);
-// Booking form handler
-document.querySelector(".booking-form")?.addEventListener("submit", function(e) {
+  function showSlide(index) {
+    heroSlides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % heroSlides.length;
+    showSlide(currentSlide);
+  }
+
+  setInterval(nextSlide, 5000);
+})();
+
+/* =========================
+   BOOKING FORM
+========================= */
+document.querySelector(".booking-form")?.addEventListener("submit", e => {
   e.preventDefault();
   alert("Searching for available trips... ✈️");
 });
 
-// Testimonial slider
-let testimonialIndex = 0;
-const testimonials = document.querySelectorAll(".testimonial");
-const dots = document.querySelectorAll(".dot");
+/* =========================
+   TESTIMONIAL SLIDER
+========================= */
+(function () {
+  const testimonials = document.querySelectorAll(".testimonial");
+  const dots = document.querySelectorAll(".dot");
 
-function showTestimonial(index) {
-  testimonials.forEach(t => t.classList.remove("active"));
-  dots.forEach(d => d.classList.remove("active"));
-  testimonials[index].classList.add("active");
-  dots[index].classList.add("active");
-}
+  if (!testimonials.length || !dots.length) return;
 
-function nextTestimonial() {
-  testimonialIndex = (testimonialIndex + 1) % testimonials.length;
-  showTestimonial(testimonialIndex);
-}
+  let testimonialIndex = 0;
 
-dots.forEach((dot, i) => {
-  dot.addEventListener("click", () => {
-    testimonialIndex = i;
-    showTestimonial(i);
+  function showTestimonial(index) {
+    testimonials.forEach(t => t.classList.remove("active"));
+    dots.forEach(d => d.classList.remove("active"));
+    testimonials[index].classList.add("active");
+    dots[index].classList.add("active");
+  }
+
+  function nextTestimonial() {
+    testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+    showTestimonial(testimonialIndex);
+  }
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      testimonialIndex = i;
+      showTestimonial(i);
+    });
   });
-});
 
-setInterval(nextTestimonial, 5000);
+  setInterval(nextTestimonial, 5000);
+})();
 
-// Newsletter form simple interaction
-const newsletterForm = document.querySelector('.newsletter-form');
-newsletterForm.addEventListener('submit', e => {
-  e.preventDefault();
-  const button = newsletterForm.querySelector('button');
-  button.innerText = "Subscribed!";
-  button.style.background = "#3FBF00";
-  setTimeout(() => {
-    button.innerText = "Subscribe";
-    button.style.background = "#004B2B";
-  }, 3000);
-  newsletterForm.reset();
-});
+/* =========================
+   NEWSLETTER INTERACTION
+========================= */
+(function () {
+  const newsletterForm = document.querySelector('.newsletter-form');
+  if (!newsletterForm) return;
 
+  newsletterForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const button = newsletterForm.querySelector('button');
+    button.innerText = "Subscribed!";
+    button.style.background = "#3FBF00";
 
-document.getElementById("menu-toggle").addEventListener("click", function () {
-  const menu = document.getElementById("nav-menu");
-  menu.style.display = menu.style.display === "block" ? "none" : "block";
-});
+    setTimeout(() => {
+      button.innerText = "Subscribe";
+      button.style.background = "#004B2B";
+    }, 3000);
 
-const menuToggle = document.getElementById('menu-toggle');
-const navMenu = document.getElementById('nav-menu');
+    newsletterForm.reset();
+  });
+})();
 
-menuToggle.addEventListener('click', () => {
-  navMenu.classList.toggle('open');
-});
+/* =========================
+   MOBILE NAV (HAMBURGER)
+========================= */
+(function () {
+  const menuToggle = document.getElementById("menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
+
+  if (!menuToggle || !navMenu) return;
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+  });
+})();
