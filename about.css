@@ -43,7 +43,7 @@ img {
 .about-hero {
   position: relative;
   height: 55vh;
-  background: url("images/about-hero.jpg") center/cover no-repeat;
+  background: url("images/about-hero.webp") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,7 +160,7 @@ img {
     rgba(4,75,43,0.9),
     rgba(4,75,43,0.75)
   ),
-  url("images/cta-bg.jpg") center/cover no-repeat;
+  url("images/cta-bg.webp") center/cover no-repeat;
   color: #fff;
 }
 

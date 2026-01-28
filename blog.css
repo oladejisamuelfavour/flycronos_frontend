@@ -14,7 +14,7 @@ body {
 .blog-hero {
   position: relative;
   height: 50vh;
-  background: url('images/blog-hero.jpg') center/cover no-repeat;
+  background: url('images/blog-hero.webp') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -31,7 +31,7 @@ body {
 .contact-hero {
   position: relative;
   height: 50vh;
-  background: url("images/contact-hero.jpg") center/cover no-repeat;
+  background: url("images/contact-hero.webp") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;

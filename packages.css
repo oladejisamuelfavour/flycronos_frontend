@@ -2,7 +2,7 @@
 .packages-hero {
   position: relative;
   height: 60vh;
-  background: url('images/packages-hero.jpg') center/cover no-repeat;
+  background: url('images/packages-hero.webp') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
